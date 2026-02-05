@@ -1,4 +1,21 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# UI Assignment – Senior Software Engineer
+
+This project is a frontend-only implementation of the provided UI designs. It focuses on clean architecture, scalability, and close visual alignment with the given screens, using modern React and Next.js best practices.
+
+---
+
+## How to Run the Project
+
+### Prerequisites
+
+- Node.js v18 or higher
+- npm / yarn / pnpm
+
+### Steps
+
+```bash
+npm install
+```
 
 ## Getting Started
 
@@ -16,21 +33,34 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## How the Code Was Built
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- The project is built using Next.js with React functional components and hooks
+- TypeScript is used throughout the project for type safety and maintainability
+- Tailwind CSS is used for styling, with shadcn/ui for reusable, accessible UI components
+- The codebase follows a component-driven and feature-based folder structure, making it scalable and easy to extend
+- Layout components such as Sidebar, Header, and Page Containers are shared across screens
+- UI elements like cards, tables, status indicators, and progress components are reusable and data-driven
+- Routing is handled using the Next.js App Router
+- All data is mocked using static JSON/config files, keeping the UI independent of a backend
+- The implementation closely follows the provided designs with attention to spacing, typography, colors, and responsiveness
 
-## Learn More
+## Assumptions Made
 
-To learn more about Next.js, take a look at the following resources:
+-The scope of the task is focused on frontend UI implementation only
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- No real backend or API integration is required
+- Static or mocked data is sufficient to demonstrate functionality
+- Authentication, authorization, and persistence are out of scope
+- A desktop-first approach is acceptable as long as the layout remains usable on smaller screens
+- Any missing assets or values were approximated to best match the provided designs
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## What I Would Improve With More Time
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Integrate real APIs with proper data fetching and caching (e.g., React Query or SWR)
+- Add loading, empty, and error states for all data-driven components
+- Improve accessibility (ARIA roles, keyboard navigation, screen reader support)
+- Add unit and integration tests (Jest, React Testing Library)
+- Introduce global state management if the application scales further
+- Add animations and transitions for enhanced user experience
+- Implement theme support (dark mode / brand-based theming)
